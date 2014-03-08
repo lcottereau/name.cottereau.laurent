@@ -27,3 +27,4 @@ fonctionnalités sont incluses :
 * [DataUrl](http://dataurl.net/#dataurlmaker) pour les images en ligne pour les pages d'erreur et de maintenance.
 * [CloudFlare](https://www.cloudflare.com/) pour la sécurisation et l'accélération du site
 
+ 
