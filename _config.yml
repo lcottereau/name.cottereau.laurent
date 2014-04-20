@@ -3,7 +3,8 @@ author :
   name : Laurent Cottereau
   email : laurent@cottereau.name
   avatar : /img/avatar/09.jpg
-  openid : http://openid.claimid.com/lcottereau
+  openid : http://lcottereau.pip.verisignlabs.com
+    server : http://pip.verisignlabs.com/server
 lsi : true
 permalink: date
 production_url : http://laurent.cottereau.name
