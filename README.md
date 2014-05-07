@@ -12,6 +12,7 @@ fonctionnalités sont incluses :
     * [Textes](http://laurent.cottereau.name/feed/recent)
     * [Photos](http://laurent.cottereau.name/feed/photos)
     * [Suggestions](http://laurent.cottereau.name/feed/suggestions)
+    * [Randonnées](http://laurent.cottereau.name/feed/hikes)
 * pages d'erreur personnalisées 
 
 ## Crédits
