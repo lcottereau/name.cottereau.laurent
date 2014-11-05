@@ -1,2 +1,2 @@
-https://github.com/heroku/heroku-buildpack-ruby.git#v119
+https://github.com/heroku/heroku-buildpack-ruby.git
 https://github.com/lcottereau/heroku-apache-static-jekyll.git
