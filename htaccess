@@ -553,5 +553,3 @@ Redirect temp /feed/hikes http://www.shareyouradventure.com/user/feed/lcottereau
 RedirectMatch permanent ^/blog/index.php?(.*) http://blog.laurent.cottereau.name/post/$1
 RedirectMatch permanent ^/blog(.*) http://blog.laurent.cottereau.name$1
 
-RedirectMatch temp ^/books(.*) http://delirium.synology.me/livres/_catalog$1
-
