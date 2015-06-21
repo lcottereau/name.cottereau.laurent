@@ -8,6 +8,6 @@ author :
 lsi : true
 permalink: date
 production_url : http://laurent.cottereau.name
-pygments: true
+highlighter: pygments 
 title : Clarky's Corner
   
