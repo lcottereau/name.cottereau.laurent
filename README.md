@@ -13,7 +13,8 @@ fonctionnalités sont incluses :
     * [Photos](http://laurent.cottereau.name/feed/photos)
     * [Suggestions](http://laurent.cottereau.name/feed/suggestions)
     * [Randonnées](http://laurent.cottereau.name/feed/hikes)
-* pages d'erreur personnalisées 
+* pages d'erreur personnalisées
+* des vérifications via l'[Intégration Continue](https://travis-ci.org/lcottereau/name.cottereau.laurent)
 
 ## Crédits
 
@@ -27,6 +28,5 @@ fonctionnalités sont incluses :
 * [Iconifier](http://iconifier.net/) pour la création des `favicon`
 * [DataUrl](http://dataurl.net/#dataurlmaker) pour les images en ligne pour les pages d'erreur et de maintenance.
 * [CloudFlare](https://www.cloudflare.com/) pour la sécurisation et l'accélération du site
-* [Travis-CI](https://travis-ci.org/lcottereau/name.cottereau.laurent) pour l'intégration continue
 
  
