@@ -1,4 +1,4 @@
-Site Perso de Laurent Cottereau
+Site Perso de Laurent Cottereau [![Build Status](https://travis-ci.org/lcottereau/name.cottereau.laurent.svg?branch=master)](https://travis-ci.org/lcottereau/name.cottereau.laurent)
 ======================
 
 C'est une page unique, visible sur http://laurent.cottereau.name, au design reactif inspiré par [about.me](http://about.me) qui inclue une description rapide et 
@@ -27,5 +27,6 @@ fonctionnalités sont incluses :
 * [Iconifier](http://iconifier.net/) pour la création des `favicon`
 * [DataUrl](http://dataurl.net/#dataurlmaker) pour les images en ligne pour les pages d'erreur et de maintenance.
 * [CloudFlare](https://www.cloudflare.com/) pour la sécurisation et l'accélération du site
+* [Travis-CI](https://travis-ci.org/lcottereau/name.cottereau.laurent) pour l'intégration continue
 
  
