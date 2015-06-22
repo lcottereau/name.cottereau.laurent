@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.1
 install: gem install jekyll html-proofer
-script: jekyll build && htmlproof --href-ignore www.linkedin.com ./_site 
+script: jekyll build && htmlproof ./_site --href-ignore http://www.linkedin.com/in/lcottereau/fr 
 
 # branch whitelist
 branches:
