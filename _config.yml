@@ -5,6 +5,7 @@ author :
   avatar : /img/avatar/09.jpg
   openid : http://lcottereau.pip.verisignlabs.com
   openidserver : http://pip.verisignlabs.com/server
+exclude: [vendor]
 lsi : true
 permalink: date
 production_url : http://laurent.cottereau.name
