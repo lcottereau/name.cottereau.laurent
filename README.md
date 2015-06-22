@@ -20,7 +20,7 @@ fonctionnalités sont incluses :
 * [HTML 5 Boilerplate v5.0](http://html5boilerplate.com/), [Modernizr v2.8.3](http://modernizr.com/), 
   [jQuery v1.11.2](http://jquery.com/) packagé par [Initializr](http://www.initializr.com/)
 * [Jekyll](https://github.com/jekyll/jekyll) pour le système de templating
-* [Heroku](https://www.heroku.com/) pour l'hébergement, avec le [buildpack Multi](https://github.com/heroku/heroku-buildpack-multi)
+* [Heroku](https://www.heroku.com/) pour l'hébergement
 * [Florent Mathé](http://www.linkedin.com/in/florentmathe) pour l'image de fond
 * FontSquirrel pour la [fonte Alex Brush](http://www.fontsquirrel.com/fonts/alex-brush)
 * [Simple Icons](http://simpleicons.org/) pour la majeure partie des icônes
