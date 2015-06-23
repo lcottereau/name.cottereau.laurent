@@ -546,8 +546,5 @@ Redirect temp /feed/photos http://500px.com/lcottereau/rss
 Redirect temp /feed/suggestions http://feeds.delicious.com/v2/rss/lcottereau
 Redirect temp /feed/hikes http://www.shareyouradventure.com/user/feed/lcottereau/all
 
-RedirectMatch permanent ^/blog/index.php?(.*) http://blog.laurent.cottereau.name/post/$1
-RedirectMatch permanent ^/blog(.*) http://blog.laurent.cottereau.name$1
-
 RedirectMatch temp ^/books(.*) http://delirium.synology.me/livres/_catalog$1
 
