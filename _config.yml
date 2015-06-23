@@ -6,8 +6,12 @@ author :
   openid : http://lcottereau.pip.verisignlabs.com
   openidserver : http://pip.verisignlabs.com/server
 defaults:
-  layout: default
-  theme: main
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      theme: main
 exclude: [ LICENSE, README.md, vendor ]
 highlighter: rouge
 include: [ .htaccess ]
