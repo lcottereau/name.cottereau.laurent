@@ -23,10 +23,8 @@ fonctionnalités sont incluses :
 * [Jekyll](https://github.com/jekyll/jekyll) pour le système de templating
 * [Heroku](https://www.heroku.com/) pour l'hébergement
 * [Florent Mathé](http://www.linkedin.com/in/florentmathe) pour l'image de fond
-* FontSquirrel pour la [fonte Alex Brush](http://www.fontsquirrel.com/fonts/alex-brush)
+* FontSquirrel pour les fontes [Alex Brush](http://www.fontsquirrel.com/fonts/alex-brush) et [Caviar Dreams](http://www.fontsquirrel.com/fonts/Caviar-Dreams)
 * [Simple Icons](http://simpleicons.org/) pour la majeure partie des icônes
 * [Iconifier](http://iconifier.net/) pour la création des `favicon`
 * [DataUrl](http://dataurl.net/#dataurlmaker) pour les images en ligne pour les pages d'erreur et de maintenance.
 * [CloudFlare](https://www.cloudflare.com/) pour la sécurisation et l'accélération du site
-
- 
