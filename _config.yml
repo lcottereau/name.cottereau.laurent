@@ -6,19 +6,13 @@ author :
   openid : http://lcottereau.pip.verisignlabs.com
   openidserver : http://pip.verisignlabs.com/server
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: default
-      category: blog
+  layout: default
+  theme: main
 exclude: [ LICENSE, README.md, vendor ]
 highlighter: rouge
 include: [ .htaccess ]
 lsi : true
-permalink: pretty
+permalink: /blog/:year/:month/:day/:title/
 production_url : http://laurent.cottereau.name
 timezone: Europe/Paris
 title : Clarky's Corner
-  

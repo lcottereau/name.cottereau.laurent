@@ -1,40 +1,105 @@
 <!doctype html>
-<html class="no-js" lang="">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="fr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>{{ page.title }} &ndash; {{ site.title }}</title>
+        <meta name="description" content="Page personnelle de {{ site.author.name }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/{{ page.theme }}.css">
+
+        <link rel="openid.server" href="{{ site.author.openidserver }}" />
+        <link rel="openid.delegate" href="{{ site.author.openid }}" />
+        <link rel="openid2.provider" href="{{ site.author.openidserver  }}" />
+        <link rel="openid2.local_id" href="{{ site.author.openid }}" />
+
+        <link rel="pavatar" href="{{ site.author.avatar }}" />
+
+        <link rel="alternate" type="application/atom+xml" title="Derniers articles du blog" href="http://laurent.cottereau.name/feed/recent" />
+        <link rel="alternate" type="application/rss+xml" title="Dernières photos du photoblog" href="http://laurent.cottereau.name/feed/photos" />
+        <link rel="alternate" type="application/rss+xml" title="Dernières lectures" href="http://laurent.cottereau.name/feed/books" />
+        <link rel="alternate" type="application/rss+xml" title="Dernières suggestions de sites à visiter" href="http://laurent.cottereau.name/feed/suggestions" />
+        <link rel="alternate" type="application/rss+xml" title="Dernières randonnées" href="http://laurent.cottereau.name/feed/hikes" />
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <div id="global">
+            <div class="header-container">
+                <header class="wrapper clearfix">
+                    <h1 class="title">{{ page.title }}</h1>
+                </header>
+            </div>
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <div class="main-container">
+                <div class="main wrapper clearfix">
+
+                    {{ content }}
+
+                </div> <!-- #main -->
+            </div> <!-- #main-container -->
+        </div><!-- global -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+
+
+              <p id="copyleft">
+                Sauf <a href="https://github.com/lcottereau/name.cottereau.laurent#cr%C3%A9dits">mention contraire</a>,
+                le contenu de ce site est la propriété de
+                <a href="mailto:{{ site.author.email }}" accesskey="7">{{ site.author.name }}</a>
+                et est mis &agrave; disposition sous
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">contrat Creative
+                    Commons BY-NC-SA</a>.
+                Les documents cités ou lié peuvent être soumis au droit d'auteur.
+                <!-- /Contrat Creative Commons -->
+
+
+                <!--
+                <rdf:RDF xmlns="http://web.resource.org/cc/"
+                      xmlns:dc="http://purl.org/dc/elements/1.1/"
+                      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                  <Work rdf:about="">
+                     <dc:title>{{ site.title }}</dc:title>
+                     <dc:date>2005</dc:date>
+                     <dc:creator>
+                      <Agent>
+                         <dc:title>{{ site.author.name }}</dc:title>
+                      </Agent>
+                     </dc:creator>
+                     <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/" />
+                  </Work>
+
+                  <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">
+                     <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+                     <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+                     <requires rdf:resource="http://web.resource.org/cc/Notice" />
+                     <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+                     <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+                     <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+                     <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+                  </License>
+
+                </rdf:RDF>
+
+                -->
+
+
+
+
+            </footer>
+        </div>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+        <script src="js/main.js"></script>
     </body>
 </html>
