@@ -1,3 +1,5 @@
+---
+---
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -95,9 +97,25 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
-
+.header-container {
+    background-size: cover;
+    text-align: right;
+    color: white;
+    position: relative;
+    min-height: 400px;
+}
+h1 {
+    position: absolute;
+    bottom: 0;
+}
+header {
+    
+}
+header, .main {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 47rem;
+}
 
 
 
