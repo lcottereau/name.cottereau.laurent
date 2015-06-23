@@ -7,7 +7,7 @@ script: jekyll build && htmlproof ./_site --href-ignore http://www.linkedin.com/
 # branch whitelist
 branches:
   only:
-  - master
+    - master
 
 env:
   global:
