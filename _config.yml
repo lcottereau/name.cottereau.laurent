@@ -5,9 +5,20 @@ author :
   avatar : /img/avatar/09.jpg
   openid : http://lcottereau.pip.verisignlabs.com
   openidserver : http://pip.verisignlabs.com/server
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: default
+      category: blog
+exclude: [ LICENSE, README.md ]
+highlighter: rouge
+include: [ .htaccess ]
 lsi : true
-permalink: date
+permalink: pretty
 production_url : http://laurent.cottereau.name
-highlighter: rouge 
+timezone: Europe/Paris
 title : Clarky's Corner
   
