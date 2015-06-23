@@ -13,7 +13,7 @@ defaults:
     values:
       layout: default
       category: blog
-exclude: [ LICENSE, README.md ]
+exclude: [ LICENSE, README.md, vendor ]
 highlighter: rouge
 include: [ .htaccess ]
 lsi : true

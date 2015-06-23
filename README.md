@@ -1,4 +1,4 @@
-Site Perso de Laurent Cottereau
+Site Perso de Laurent Cottereau [![Build Status](https://travis-ci.org/lcottereau/name.cottereau.laurent.svg?branch=master)](https://travis-ci.org/lcottereau/name.cottereau.laurent)
 ======================
 
 C'est une page unique, visible sur http://laurent.cottereau.name, au design reactif inspiré par [about.me](http://about.me) qui inclue une description rapide et 
@@ -13,14 +13,15 @@ fonctionnalités sont incluses :
     * [Photos](http://laurent.cottereau.name/feed/photos)
     * [Suggestions](http://laurent.cottereau.name/feed/suggestions)
     * [Randonnées](http://laurent.cottereau.name/feed/hikes)
-* pages d'erreur personnalisées 
+* pages d'erreur personnalisées
+* des vérifications via l'[Intégration Continue](https://travis-ci.org/lcottereau/name.cottereau.laurent)
 
 ## Crédits
 
 * [HTML 5 Boilerplate v5.0](http://html5boilerplate.com/), [Modernizr v2.8.3](http://modernizr.com/), 
   [jQuery v1.11.2](http://jquery.com/) packagé par [Initializr](http://www.initializr.com/)
 * [Jekyll](https://github.com/jekyll/jekyll) pour le système de templating
-* [Heroku](https://www.heroku.com/) pour l'hébergement, avec le [buildpack Multi](https://github.com/heroku/heroku-buildpack-multi)
+* [Heroku](https://www.heroku.com/) pour l'hébergement
 * [Florent Mathé](http://www.linkedin.com/in/florentmathe) pour l'image de fond
 * FontSquirrel pour la [fonte Alex Brush](http://www.fontsquirrel.com/fonts/alex-brush)
 * [Simple Icons](http://simpleicons.org/) pour la majeure partie des icônes
