@@ -14,6 +14,7 @@ fonctionnalités sont incluses :
     * [Suggestions](http://laurent.cottereau.name/feed/suggestions)
     * [Randonnées](http://laurent.cottereau.name/feed/hikes)
 * pages d'erreur personnalisées
+* description de [la license en RDF](https://creativecommons.org/ns#)
 * des vérifications via l'[Intégration Continue](https://travis-ci.org/lcottereau/name.cottereau.laurent)
 
 ## Crédits
