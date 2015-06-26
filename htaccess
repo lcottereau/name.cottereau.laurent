@@ -557,3 +557,6 @@ RedirectMatch temp ^/books(.*) http://delirium.synology.me/livres/_catalog$1
 
 # Des rattrapages d'anciennes URL
 Redirect permanent /photos-feed.xml http://laurent.cottereau.name/feed/photos
+Redirect permanent /suggestions-feed.xml http://laurent.cottereau.name/feed/suggestions
+Redirect permanent /articles-feed.xml http://laurent.cottereau.name/feed/recent
+Redirect permanent /comments-feed.xml http://blog.laurent.cottereau.name/feed/atom/comments
