@@ -17,6 +17,6 @@ highlighter: rouge
 include: [ .htaccess ]
 lsi : true
 permalink: /blog/:year/:month/:day/:title/
-production_url : http://laurent.cottereau.name
 timezone: Europe/Paris
 title : Clarky's Corner
+url: "http://laurent.cottereau.name"
