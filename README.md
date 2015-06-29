@@ -1,9 +1,9 @@
 Site Perso de Laurent Cottereau [![Build Status](https://travis-ci.org/lcottereau/name.cottereau.laurent.svg?branch=master)](https://travis-ci.org/lcottereau/name.cottereau.laurent)
 ======================
 
-C'est une page unique, visible sur http://laurent.cottereau.name, au design reactif inspiré par [about.me](http://about.me) qui inclue une description rapide et 
-ajoute des liens vers des sites externes pour un certain nombre d'intérêts. Par ailleurs, un certain nombre de
-fonctionnalités sont incluses :
+C'est une _landing page_ unique, visible sur http://laurent.cottereau.name, au design reactif inspiré par [about.me](http://about.me) 
+qui inclue une description rapide et ajoute des liens vers des sites externes pour un certain nombre d'intérêts. Mais c'est aussi
+un blog plus classique sur `/blog`. Par ailleurs, un certain nombre de fonctionnalités sont incluses :
 
 * gestion des [avatar personnels](http://pavatar.com/)
 * gestion de la [redirection OpenId](https://openid.net/)
