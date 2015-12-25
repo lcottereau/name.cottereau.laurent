@@ -152,8 +152,11 @@ footer {
 footer p {
    margin: 1em;
 }
-footer a, footer a:visited {
+footer a, header a {
    color: white;
+}
+footer a:visited, header a:visited {
+   color: #ccc;
 }
 
 
