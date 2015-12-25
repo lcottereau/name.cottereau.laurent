@@ -129,6 +129,7 @@ header, .main, footer {
 .main-container {
    color: #222;
    background-color: white;
+   padding: 2em 0;
 }
 footer {
   background: #222;
@@ -136,6 +137,9 @@ footer {
   font-size: 60%;
   padding: 1em;
   text-align: center;
+}
+footer p {
+   margin: 1em;
 }
 footer a, footer a:visited {
    color: white;

@@ -14,6 +14,7 @@ defaults:
       theme: main
 exclude: [ LICENSE, README.md, vendor ]
 include: [ .htaccess ]
+locale: fr
 lsi : true
 permalink: /blog/:year/:month/:day/:title/
 timezone: Europe/Paris
