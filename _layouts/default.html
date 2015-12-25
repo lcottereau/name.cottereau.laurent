@@ -43,6 +43,16 @@
                     <h1 class="title">{{ page.title }}</h1>
                     {% if page.date %}
                         <p>{{ page.date | localize: "%-d %B %Y" }}</p>
+                    {% elsif page.other.categories %}
+                        <p>Dans
+                            {% for c in page.other.categories %}
+                                {% for p in site.pages %}
+                                    {% if p.category == c %}
+                                        ⏩ <a href="{{ p.url }}">{{ c }}</a>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endfor %}
+                        </p>
                     {% endif %}
                 </header>
             </div>
