@@ -127,9 +127,16 @@ header, .main {
     max-width: 47rem;
     padding: 0 1rem;
 }
-
-
-
+footer {
+  background: linear-gradient(white, rgba(1, 1, 1, 0.7) 40%, #000);
+  color: white;
+  font-size: 60%;
+  padding: 5em 1em 0.5em 1em;
+  text-align: center;
+}
+footer a, footer a:visited {
+   color: white;
+}
 
 
 
