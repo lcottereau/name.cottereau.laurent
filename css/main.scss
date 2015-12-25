@@ -13,7 +13,8 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: white;
+    background-color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -107,10 +108,8 @@ textarea {
     font-style: normal;
 }
 .header-container {
-    background-color: black;
     background-position: bottom;
     background-size: cover;
-    color: white;
     min-height: 400px;
     position: relative;
     font-family: 'caviar_dreamsregular';
@@ -127,8 +126,12 @@ header, .main {
     max-width: 47rem;
     padding: 0 1rem;
 }
+.main-container {
+   color: #222;
+   background-color: white;
+}
 footer {
-  background: linear-gradient(white, rgba(1, 1, 1, 0.7) 40%, #000);
+  background: linear-gradient(white, #777 30%, #333 60%, #222);
   color: white;
   font-size: 60%;
   padding: 5em 1em 0.5em 1em;
