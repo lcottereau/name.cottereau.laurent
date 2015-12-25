@@ -131,6 +131,12 @@ header, .main, footer {
    background-color: white;
    padding: 2em 0;
 }
+.main a {
+   color: black;
+}
+.main a:visited {
+   color: dark-grey;
+}
 footer {
   background: #222;
   color: white;
