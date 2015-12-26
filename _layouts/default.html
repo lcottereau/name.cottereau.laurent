@@ -67,7 +67,7 @@
                         {% for p in site.pages %}
                             {% if page.categories.last == p.category %}
                             <p id="related">
-                              Un article à propos de <em><a href="{{ p.url }}">{{ p.title }}</a></em>
+                              Un article de la série <em><a href="{{ p.url }}">{{ p.title }}</a></em>
                             </p>
                             {% endif %}
                         {% endfor %}
