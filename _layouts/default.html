@@ -48,7 +48,7 @@
                             {% for c in page.other.categories %}
                                 {% for p in site.pages %}
                                     {% if p.category == c %}
-                                        ⏩ <a href="{{ p.url }}">{{ c }}</a>
+                                        ⏩ <a href="{{ p.url }}">{{ p.title }}</a>
                                     {% endif %}
                                 {% endfor %}
                             {% endfor %}
