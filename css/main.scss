@@ -123,8 +123,10 @@ h1 {
 }
 header, .main, footer {
     margin: 0 auto;
-    max-width: 47rem;
     padding: 0 1rem;
+}
+header, .main, footer, h1 {
+   max-width: 47rem;
 }
 .main-container {
    color: #222;
