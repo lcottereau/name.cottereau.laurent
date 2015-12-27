@@ -1,0 +1,5 @@
+---
+title: Vous avez des plantages... enfin pas vraiment?
+---
+
+<p>J'avais depuis quelques temps des plantages très régulièrement avec le message suivant dans le <code>/var/log/syslog</code>:</p>\r\n\r\n<p><code>Apr 12 19:17:01 guinness kernel: atkbd.c: Unknown key released (translated set 2, code 0x7a on isa0060/serio0).</code></p>\r\n<p><code>Apr 12 19:17:01 guinness kernel: atkbd.c: This is an XFree86 bug. It shouldn't access hardware directly.</code></p>\r\n\r\n<p>Le plantage bloquait tout... sauf que c'est que en fait juste le serveur X qui était planté. J'ai pu vérifier cela en me connectant depuis une autre machine et en redémarrant le serveur depuis celle-ci. J'ai essayé de nombreux réglages, et en fait, le problème semble être dû à la version de xfree que j'utilisais (la stable de la Debian woody). Et passer en unstable a tout résolu.</p>

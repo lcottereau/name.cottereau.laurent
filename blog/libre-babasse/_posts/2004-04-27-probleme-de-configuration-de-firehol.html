@@ -1,0 +1,5 @@
+---
+title: Problème de configuration de firehol
+---
+
+<p>J'avais un petit problème avec le néanmoins excellent <a href="http://firehol.sourceforge.net/" title="the iptables stateful packet filtering firewall builder">FireHOL</a>; je n'arrivais pas à faire en sorte que l'adresse <acronym title="Internet Procotol">IP</acronym> publique de mon serveur soit atteignable depuis mon réseau interne (les machines ont des adresses IP privées). Cela posait un problème puisque le serveur <acronym title="Domain Name Server">DNS</acronym> renvoie l'adresse IP publique pour le serveur, et non l'adresse privée.</p>\r\n\r\n<p>J'utilise la base du script de configuration de FireHOL <code>lan-gateway.conf</code>. Et c'est celui-ci qui pose un problème. Il manque l'adresse IP publique pour l'interface interne. Voilà donc la nouvelle version de la ligne de configuration qui a changée:</p>\r\n\r\n<p><code><span><del>interface "" home src "" dst " "\r\n</del></span><span><ins>interface "" home src "" dst "  <em>"</em>\r\n</ins></span></code></p>

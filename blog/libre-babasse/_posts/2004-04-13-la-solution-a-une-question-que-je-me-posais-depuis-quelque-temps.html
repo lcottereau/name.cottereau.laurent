@@ -1,0 +1,5 @@
+---
+title: La solution à une question que je me posais depuis quelque temps
+---
+
+<p><code>apt-get</code> c'est génial, indéniablement. Ca permet d'installer automatiquement toutes les librairies et dépendances nécessaires au bon fonctionnement d'un programme. Le problème, c'est que ca ne marche pas dans l'autre sens. Plus exactement, si l'on a l'habitude d'installer plein de programmes pour les tester, on se retrouve après désinstallation avec tout un tas de librairies inutiles. Le terme <a href="http://www.debian.org">Debian</a> est <em>orphelin</em>.</p>\r\n\r\n<p>Et on aimerait bien pouvoir les retrouver facilement pour les désinstaller puisqu'elles ne servent à rien. Je ne savais pas comment faire jusqu'à ce que je trouve le programe <code>deborphan</code>. L'exécuter sans options (<kbd>deborphan</kbd>) vous renvoie une liste de librairies orphelines, et il suffit ensuite des les désinstaller. Je ne sais pas pourquoi, mais il m'a fallu plusieurs séries de <kbd>deborphan</kbd>/<kbd>apt-get remove --purge</kbd> pour ne plus avoir de librairies orphelines du tout.</p>

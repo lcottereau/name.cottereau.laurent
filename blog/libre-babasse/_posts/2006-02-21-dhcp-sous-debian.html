@@ -1,0 +1,5 @@
+---
+title: DHCP sous debian...
+---
+
+<h3>Le problème :</h3>\r\n\r\n<p><code>Starting DHCP server: dhcpd failed to start - check syslog for diagnostics.</code>. L'examen du syslog (<kbd>sudo tail /var/log/daemon.log</kbd>) donne ceci :</p>\r\n\r\n<blockquote><p><code>\r\nFeb 21 21:47:32 pastis dhcpd: No subnet declaration for eth1 (0.0.0.0).<br/>\r\nFeb 21 21:47:32 pastis dhcpd: Please write a subnet declaration in your dhcpd.conf file for the<br/>\r\nFeb 21 21:47:32 pastis dhcpd: network segment to which interface eth1 is attached.<br/>\r\n</code></p></blockquote>\r\n\r\n<h3>La solution :</h3>\r\n\r\n<p><kbd>sudo vi /etc/default/dhcp</kbd>...</p>
