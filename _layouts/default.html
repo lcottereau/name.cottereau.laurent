@@ -63,7 +63,7 @@
 
                     {{ content }}
 
-                    {% if page.categories %}
+                    {% if page.categories.last %}
                         {% for p in site.pages %}
                             {% if page.categories.last == p.category %}
                             <p id="related">
