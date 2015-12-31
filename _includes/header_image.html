@@ -1,7 +1,12 @@
 {% if page.image %}
- {% capture bg_url %}/img/bg/{{ page.image }}{% endcapture %}
-{% elsif page.category %}
- {% capture bg_url %}/img/bg/category-{{ page.category }}.jpg{% endcapture %}
+  {% capture bg_url %}/img/bg/{{ page.image }}{% endcapture %}
+{% else %}
+  {% if page.category %}
+    {% assign cat = page.category %}
+  {% else %}
+    {% assign cat = page.categories.last %}
+  {% endif %}
+  {% capture bg_url %}/img/bg/category-{{ cat }}.jpg{% endcapture %}
 {% endif %}
 
 {% if bg_url %}
