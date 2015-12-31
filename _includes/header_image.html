@@ -1,0 +1,13 @@
+{% if page.image %}
+ {% capture bg_url %}/img/bg/{{ page.image }}{% endcapture %}
+{% elsif page.category %}
+ {% capture bg_url %}/img/bg/category-{{ page.category }}.jpg{% endcapture %}
+{% endif %}
+
+{% if bg_url %}
+    style="
+        background-image: url('{{ bg_url }}');
+        background-image: -moz-linear-gradient(top, rgba(255,255,255,0), rgba(0,0,0,0.8)), url('{{ bg_url }}');'
+        background-image: linear-gradient(top, rgba(255,255,255,0), rgba(0,0,0,0.8)), url('{{ bg_url }}');'
+    "
+{% endif %}

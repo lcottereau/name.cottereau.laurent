@@ -1,7 +1,6 @@
 ---
 title: Nos amis les commentateurs sportifs
 category: nos-amis-les-commentateurs-sportifs
-image: category-nos-amis-les-commentateurs-sportifs.jpg
 other:
   categories: [blog, rugby]
 ---
