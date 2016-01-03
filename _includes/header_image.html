@@ -1,8 +1,8 @@
 {% if page.image %}
   {% capture bg_url %}/img/bg/{{ page.image }}{% endcapture %}
 {% else %}
-  {% if page.category %}
-    {% assign cat = page.category %}
+  {% if category_index %}
+    {% assign cat = category_index %}
   {% else %}
     {% assign cat = page.categories.last %}
   {% endif %}

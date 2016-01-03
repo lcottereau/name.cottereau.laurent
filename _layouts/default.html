@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="fr"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="fr"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
-    <head>
+    <head>{% include is_category_index.html %}
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>{{ page.title }} &ndash; {{ site.title }}</title>
@@ -36,14 +36,15 @@
                     <h1 class="title">{{ page.title }}</h1>
                     {% if page.date %}
                         <p>{{ page.date | localize: "%-d %B %Y" }}</p>
-                    {% elsif page.other.categories %}
+                    {% elsif category_index and category_parents[0] %}
                         <p>Dans
-                            {% for c in page.other.categories %}
-                                {% for p in site.pages %}
-                                    {% if p.category == c %}
-                                        ⏩ <a href="{{ p.url }}">{{ p.title }}</a>
-                                    {% endif %}
-                                {% endfor %}
+                            {% for parent in category_parents %}
+                              {% for p in site.pages %}
+                                {% capture parent_path %}{{ parent }}/index.{% endcapture %}
+                                {% if p.path contains parent_path %}
+                                    ⏩ <a href="{{ p.url }}">{{ p.title }}</a>
+                                {% endif %}
+                              {% endfor %}
                             {% endfor %}
                         </p>
                     {% endif %}
@@ -56,9 +57,15 @@
 
                     {{ content }}
 
+                    {% if category_index %}
+                        {% include category_index.html %}
+                    {% endif %}
+
                     {% if page.categories.last %}
                         {% for p in site.pages %}
-                            {% if page.categories.last == p.category %}
+                            {% assign p_filename = p.path | split:'/' | last %}
+                            {% assign p_last_cat = p.path | remove:p_filename | split:"/" | last %}
+                            {% if page.categories.last == p_last_cat %}
                             <p id="related">
                               Un article de la série <em><a href="{{ p.url }}">{{ p.title }}</a></em>
                             </p>
