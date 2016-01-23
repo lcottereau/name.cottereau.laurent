@@ -1,3 +1,13 @@
+<ul id="sous-categories">
+{% for c in category_sub %}
+  {% for p in site.pages %}
+    {% if p.path == c %}
+      <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+</ul>
+
 <ul class="posts">
 {% for post in site.categories[category_index] %}
    <li><span>{{ post.date | localize: "%d/%m/%Y" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>

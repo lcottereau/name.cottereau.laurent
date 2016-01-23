@@ -1,5 +1,17 @@
 {% capture filename %}{{ page.path | split:'/' | last}}{% endcapture %}
 {% if filename contains 'index.' %}
-  {% capture category_index %}{{ page.path | remove:filename | split:"/" | last }}{% endcapture %}
-  {% assign category_parents = page.path | remove:filename | remove:category_index | split:"/" %}
+  {% assign category_path = page.path | remove:filename %}
+  {% capture category_index %}{{ category_path | split:"/" | last }}{% endcapture %}
+  {% assign category_parents = category_path | remove:category_index | split:"/" %}
+  {% assign category_sub = '' %}
+  {% for p in site.pages %}
+    {% if p.path contains category_path %}
+      {% assign follow_path = p.path | remove:category_path %}
+      {% assign levels = follow_path | split:'/' | size %}
+      {% if levels == 2 %}
+        {% capture category_sub %}{{ category_sub }},{{ p.path }}{% endcapture %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% assign category_sub = category_sub | split:',' | sort %}
 {% endif %}
