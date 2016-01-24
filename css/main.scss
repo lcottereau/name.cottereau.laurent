@@ -145,10 +145,28 @@ header, .main, footer, h1 {
    font-size: 90%;
 }
 #sous-categories {
-   text-align: center;
+   display: block;
 }
 #sous-categories li {
-   display: inline;
+   display: block;
+   float: left;
+}
+#sous-categories a {
+   background-color: black;
+   color: white;
+   display: block;
+   border: 1px solid black;
+   border-radius: 0.6em;
+   text-decoration: none;
+   margin: -1em 0.2em 2em 0.2em;
+   padding: 0.3em;
+}
+#sous-categories a:hover, #sous-categories a:active {
+   background-color: white;
+   color: black;
+}
+#posts {
+   clear: both;
 }
 footer {
   background: #222;
