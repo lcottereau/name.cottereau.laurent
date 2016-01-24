@@ -16,3 +16,6 @@
         background-image: linear-gradient(top, rgba(255,255,255,0), rgba(0,0,0,0.8)), url('{{ bg_url }}');'
     "
 {% endif %}
+{% if page.bg_copyright %}
+  data-copyright="{{ page.bg_copyright }}"
+{% endif %}
