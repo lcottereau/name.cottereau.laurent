@@ -144,6 +144,12 @@ header, .main, footer, h1 {
    float: right;
    font-size: 90%;
 }
+#sous-categories {
+   text-align: center;
+}
+#sous-categories li {
+   display: inline;
+}
 footer {
   background: #222;
   color: white;
