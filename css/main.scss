@@ -163,27 +163,30 @@ header, .main, footer, h1 {
    font-size: 90%;
 }
 #sous-categories {
-   display: block;
    padding: 0;
-   margin: 0;
+   margin: -1em 0 1em 0;
 }
 #sous-categories li {
    display: inline-block;
    margin: 0;
 }
 #sous-categories a {
-   background-color: black;
+   background-color: #222;
    color: white;
    display: block;
-   border: 1px solid black;
-   border-radius: 0.6em;
+   border: 1px solid #222;
+   border-radius: 0.5em;
+   box-shadow: 0.1em 0.1em 0.1em #777;
    text-decoration: none;
-   margin: -1em 0.2em 2em 0.2em;
-   padding: 0.3em;
+   margin: 0 0.2em;
+   padding: 0.4em;
 }
 #sous-categories a:hover, #sous-categories a:active {
-   background-color: white;
+   background-color: #777;
+   border-color: #777;
+   box-shadow: 0 0 0 white;
    color: black;
+   margin: 0 0.1em 0 0.3em;
 }
 #posts {
    clear: both;
