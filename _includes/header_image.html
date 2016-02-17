@@ -3,10 +3,12 @@
 {% else %}
   {% if category_index %}
     {% assign cat = category_index %}
-  {% else %}
+  {% elsif page.categories.last %}
     {% assign cat = page.categories.last %}
   {% endif %}
-  {% capture bg_url %}/img/bg/category-{{ cat }}.jpg{% endcapture %}
+  {% if cat != empty %}
+    {% capture bg_url %}/img/bg/category-{{ cat }}.jpg{% endcapture %}
+  {% endif %}
 {% endif %}
 
 {% if bg_url %}
