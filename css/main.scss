@@ -107,6 +107,9 @@ textarea {
     font-weight: normal;
     font-style: normal;
 }
+html {
+   font-family: Helvetica;
+}
 .header-container {
     background-position: bottom;
     background-size: cover;
@@ -117,6 +120,7 @@ textarea {
 .header-container::after {
    content: attr(data-copyright);
    display: inline-block;
+   font-family: Helvetica;
    font-size: 80%;
    position: absolute;
    right: 2em;
@@ -148,6 +152,10 @@ header, .main, footer, h1 {
 }
 .main a:visited {
    color: dark-grey;
+}
+#content {
+   line-height: 1.7em;
+   font-size: 120%;
 }
 #related {
    color: #555;
