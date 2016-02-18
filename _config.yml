@@ -13,6 +13,10 @@ defaults:
       layout: "default"
       theme: main
 exclude: [ LICENSE, README.md, vendor ]
+feed:
+  path: feed/recent
+gems:
+  - jekyll-feed
 include: [ .htaccess ]
 locale: fr
 permalink: /blog/:year/:month/:day/:title/
