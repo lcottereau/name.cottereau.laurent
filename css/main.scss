@@ -156,6 +156,11 @@ header, .main, footer, h1 {
 #content {
    font-size: 121%;
    line-height: 1.7em;
+   text-align: justify;
+   h1, h2, h3, h4, h5, h6 {
+      font-family: 'caviar_dreamsregular';
+      text-align: left;
+   }
 }
 #related {
    color: #555;
@@ -163,8 +168,9 @@ header, .main, footer, h1 {
    font-size: 90%;
 }
 #sous-categories {
-   padding: 0;
+   font-size: 90%;
    margin: -1em 0 1em 0;
+   padding: 0;
 }
 #sous-categories li {
    display: inline-block;
