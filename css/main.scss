@@ -140,7 +140,7 @@ header, .main, footer {
     padding: 0 1rem;
 }
 header, .main, footer, h1 {
-   max-width: 47rem;
+   max-width: 43rem;
 }
 .main-container {
    color: #222;
@@ -154,8 +154,8 @@ header, .main, footer, h1 {
    color: dark-grey;
 }
 #content {
+   font-size: 121%;
    line-height: 1.7em;
-   font-size: 120%;
 }
 #related {
    color: #555;
@@ -208,12 +208,21 @@ footer a:visited, header a:visited {
    color: #ccc;
 }
 
-
-
-.photo img {
+img.photo {
    border: 0.1em solid black;
    border-radius: 0.5em;
-   margin: 0.5em;
+   box-shadow: 0.1em 0.1em 0.1em #777;
+   margin: 0.3em 1em;
+}
+img.photo-gauche {
+   @extend .photo;
+   float: left;
+   margin-left: 0;
+}
+img.photo-droite {
+   @extend .photo;
+   float: right;
+   margin-right: 0;
 }
 
 
