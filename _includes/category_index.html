@@ -1,12 +1,13 @@
-
 {% if category_sub[1] != 'blog/index.html' %}
   <ul id="sous-categories">
   {% for c in category_sub %}
-    {% for p in site.pages %}
-      {% if p.path == c %}
-        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
-      {% endif %}
-    {% endfor %}
+    {% if c != '' %}
+      {% for p in site.pages %}
+        {% if p.path == c %}
+          <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
   {% endfor %}
   </ul>
 {% endif %}

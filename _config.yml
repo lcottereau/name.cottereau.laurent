@@ -17,6 +17,7 @@ feed:
   path: feed/recent
 gems:
   - jekyll-feed
+  - jekyll-redirect-from
 include: [ .htaccess ]
 locale: fr
 permalink: /blog/:year/:month/:day/:title/

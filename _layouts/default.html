@@ -66,11 +66,13 @@
                     {% if page.categories.last %}
                         {% for p in site.pages %}
                             {% assign p_filename = p.path | split:'/' | last %}
-                            {% assign p_last_cat = p.path | remove:p_filename | split:"/" | last %}
-                            {% if page.categories.last == p_last_cat %}
-                            <p id="related">
-                              Un article de la série <em><a href="{{ p.url }}">{{ p.title }}</a></em>
-                            </p>
+                            {% if p_filename %}
+                                {% assign p_last_cat = p.path | remove:p_filename | split:"/" | last %}
+                                {% if page.categories.last == p_last_cat %}
+                                <p id="related">
+                                  Un article de la série <em><a href="{{ p.url }}">{{ p.title }}</a></em>
+                                </p>
+                                {% endif %}
                             {% endif %}
                         {% endfor %}
                     {% endif %}
