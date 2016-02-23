@@ -1,3 +1,5 @@
+---
+---
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
@@ -113,6 +115,8 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@import 'common';
+
 @font-face {
     font-family: 'alex_brushregular';
     src: url('fonts/alexbrush-regular-otf-webfont.eot');

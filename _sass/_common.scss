@@ -1,0 +1,11 @@
+[data-copyright]::after {
+   content: attr(data-copyright);
+   display: inline-block;
+   font-family: Helvetica;
+   font-size: 80%;
+   position: absolute;
+   right: 2em;
+   top: 1em;
+   transform: rotate(270deg);
+   transform-origin: 100% 0 0;
+}

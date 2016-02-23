@@ -97,6 +97,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@import 'common';
 @font-face {
     font-family: 'caviar_dreamsregular';
     src: url('fonts/CaviarDreams-webfont.eot');
@@ -116,17 +117,6 @@ html {
     min-height: 400px;
     position: relative;
     font-family: 'caviar_dreamsregular';
-}
-.header-container::after {
-   content: attr(data-copyright);
-   display: inline-block;
-   font-family: Helvetica;
-   font-size: 80%;
-   position: absolute;
-   right: 2em;
-   top: 1em;
-   transform: rotate(270deg);
-   transform-origin: 100% 0 0;
 }
 h1, header p {
     bottom: 0;
